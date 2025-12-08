@@ -38,10 +38,15 @@ async def main():
 
     print("✅ Runner created.")
 
-    response = await runner.run_debug(
-        "What is Agent Development Kit from Google? What languages is the SDK available in?"
-    )
-    print(response)
+    while True:
+        user_input = input("You: ")
+
+        if user_input.lower() in ["exit", "quit"]:
+            break
+
+        response = await runner.run(user_input)
+        print("Agent:", response.output)
+
 
 if __name__ == "__main__":
     asyncio.run(main())
