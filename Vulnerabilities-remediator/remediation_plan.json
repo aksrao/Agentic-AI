@@ -1,0 +1,200 @@
+[
+  {
+    "cve": "CVE-2025-13878",
+    "package": "bind9-host",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install bind9-host=1:9.20.18-1~deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-40778",
+    "package": "bind9-host",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install bind9-host=1:9.20.15-1~deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-40780",
+    "package": "bind9-host",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install bind9-host=1:9.20.15-1~deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-8677",
+    "package": "bind9-host",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install bind9-host=1:9.20.15-1~deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-13878",
+    "package": "bind9-libs",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install bind9-libs=1:9.20.18-1~deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-40778",
+    "package": "bind9-libs",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install bind9-libs=1:9.20.15-1~deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-40780",
+    "package": "bind9-libs",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install bind9-libs=1:9.20.15-1~deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-8677",
+    "package": "bind9-libs",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install bind9-libs=1:9.20.15-1~deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-13601",
+    "package": "libglib2.0-0t64",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install libglib2.0-0t64=2.84.4-3~deb13u2",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-64720",
+    "package": "libpng16-16t64",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install libpng16-16t64=1.6.48-1+deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-65018",
+    "package": "libpng16-16t64",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install libpng16-16t64=1.6.48-1+deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-66293",
+    "package": "libpng16-16t64",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install libpng16-16t64=1.6.48-1+deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-69419",
+    "package": "libssl3t64",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install libssl3t64=3.5.4-1~deb13u2",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-69421",
+    "package": "libssl3t64",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install libssl3t64=3.5.4-1~deb13u2",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-11234",
+    "package": "qemu-utils",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install qemu-utils=1:10.0.7+ds-0+deb13u1",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-69419",
+    "package": "openssl",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install openssl=3.5.4-1~deb13u2",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-69421",
+    "package": "openssl",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install openssl=3.5.4-1~deb13u2",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-69419",
+    "package": "openssl-provider-legacy",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install openssl-provider-legacy=3.5.4-1~deb13u2",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2025-69421",
+    "package": "openssl-provider-legacy",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install openssl-provider-legacy=3.5.4-1~deb13u2",
+    "restart_required": true
+  },
+  {
+    "cve": "CVE-2026-23490",
+    "package": "python3-pyasn1",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install python3-pyasn1=0.6.1-1+deb13u1",
+    "restart_required": false
+  },
+  {
+    "cve": "CVE-2025-66418",
+    "package": "python3-urllib3",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install python3-urllib3=2.3.0-3+deb13u1",
+    "restart_required": false
+  },
+  {
+    "cve": "CVE-2026-21441",
+    "package": "python3-urllib3",
+    "safe_to_fix": true,
+    "reason": "Fix available",
+    "remediation_type": "apt",
+    "command": "apt update && apt install python3-urllib3=2.3.0-3+deb13u1",
+    "restart_required": false
+  }
+]

@@ -16,7 +16,7 @@ parser.add_argument(
 )
 parser.add_argument(
     "--input",
-    default="./data/trivy-report.json",
+    default="./data/fullstack-report.json",
     help="Path to Trivy report JSON"
 )
 args = parser.parse_args()
@@ -24,7 +24,7 @@ args = parser.parse_args()
 severity_filter = args.severity.upper()
 input_file = args.input
 
-with open("./data/trivy-report.json") as f:
+with open("./data/fullstack-report.json") as f:
     report = json.load(f)
 
 
