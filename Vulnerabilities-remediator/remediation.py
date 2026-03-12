@@ -57,7 +57,7 @@ print(response.text)
 #     with open("remediation_plan.json", "w") as f:
 #         json.dump(remediation_plan, f, indent=2)
 
-#     print("✅ remediation_plan.json created successfully")
+#     print("remediation_plan.json created successfully")
 
 # except Exception as e:
 #     print("RAW GEMINI RESPONSE:")
