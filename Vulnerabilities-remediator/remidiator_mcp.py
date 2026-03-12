@@ -38,7 +38,7 @@ def run_remediation(command: str) -> str:
     """
 
     if not is_safe_command(command):
-        return f"❌ BLOCKED by policy: {command}"
+        return f"BLOCKED by policy: {command}"
 
     try:
         result = subprocess.run(

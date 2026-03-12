@@ -53,14 +53,14 @@ print(response.text)
 # try:
 #     remediation_plan = extract_json(response.text)
 
-#     # ✅ WRITE TO FILE
+#    
 #     with open("remediation_plan.json", "w") as f:
 #         json.dump(remediation_plan, f, indent=2)
 
 #     print("✅ remediation_plan.json created successfully")
 
 # except Exception as e:
-#     print("❌ RAW GEMINI RESPONSE:")
+#     print("RAW GEMINI RESPONSE:")
 #     print(response.text)
 #     raise RuntimeError("Gemini returned invalid JSON") from e
 
