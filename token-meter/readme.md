@@ -178,7 +178,7 @@ Example:
 Token usage logs can be visualized using **Plotly or Streamlit**.
 
 <p align="center">
-  <img src="images/dashboard.png" width="700">
+  <img src="images/bar-chart.png" width="700">
 </p>
 
 Example metrics:
@@ -187,15 +187,6 @@ Example metrics:
 * Tokens per SBU
 * Daily token usage
 * Provider usage distribution
-
----
-
-# 📈 Example Dashboard (Plotly)
-
-
-![Dashboard](images/bar-chart.png)
-
----
 
 # 🧠 Supported Payload Formats
 
