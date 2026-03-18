@@ -179,12 +179,23 @@ Example:
 <img src="images/mongodb.png" width="700">
 ---
 
-# 📊 Dashboard Example
+# 📊 Dashboards
 
-Token usage logs can be visualized using **Plotly or Streamlit**.
+Token usage logs can be visualized using **Plotly**.
 
 <p align="center">
   <img src="images/bar-chart.png" width="700">
+</p>
+
+Token usage logs can be visualized using **Prometheus loging**.
+
+<p align="center">
+  <img src="images/prometheus.png" width="700">
+</p>
+
+Token usage logs can be visualized using **Grafana**.
+
+<p align="center">
   <img src="images/Grafana-02.png" width="700">
   <img src="images/Grafana-02.png" width="700">
 </p>
