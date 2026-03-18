@@ -196,9 +196,23 @@ Token usage logs can be visualized using **Prometheus loging**.
 Token usage logs can be visualized using **Grafana**.
 
 <p align="center">
-  <img src="images/Grafana-02.png" width="700">
+  <img src="images/Grafana-03.png" width="700">
+  <img src="images/Grafana-01.png" width="700">
   <img src="images/Grafana-02.png" width="700">
 </p>
+
+The Queries used in Grafana
+* sum by (sbu) (llm_input_tokens_total)
+* sum by (sbu) (increase(llm_input_tokens_total[1h]))
+* sum by (sbu) (increase(llm_output_tokens_total[1h]))
+* sum by (sbu) (llm_output_tokens_total)
+* sum by (sbu) (llm_tokens_total)
+* sum by (model) (llm_tokens_total)
+* sum by (model) (llm_input_tokens_total)
+* sum by (model) (increase(llm_input_tokens_total[1h]))
+* sum by (model) (increase(llm_output_tokens_total[1h]))
+* sum by (model) (llm_output_tokens_total)
+
 
 Example metrics:
 

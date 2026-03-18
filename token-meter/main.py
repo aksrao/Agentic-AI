@@ -26,8 +26,18 @@ class parameters(BaseModel):
     provider: Optional[str] = "auto"
 
 tokens_counter = Counter(
-    "llm_tokens_per_sbu",
+    "llm_tokens",
     "Total tokens used per SBU",
+    ["sbu","model"]
+)
+tokens_input_counter = Counter(
+    "llm_input_tokens",
+    "total input tokens",
+    ["sbu","model"]
+)
+tokens_output_counter = Counter(
+    "llm_output_tokens",
+    "total output tokens",
     ["sbu","model"]
 )
 
@@ -111,7 +121,10 @@ def metrics():
                     "sbu": "$sbu",
                     "model": "$model"
                 },
-                "total_tokens": {"$sum": "$total_tokens"}
+                "total_tokens": {"$sum": "$total_tokens"},
+                "output_tokens": {"$sum": "$output_tokens"},
+                "input_tokens": {"$sum": "$input_tokens"}
+
             }
         }
     ])
@@ -120,7 +133,11 @@ def metrics():
     for doc in data:
         sbu = doc["_id"]["sbu"]
         model = doc["_id"]["model"]
+        input_tokens = doc["input_tokens"]
+        output_tokens = doc["output_tokens"]
         total_tokens = doc["total_tokens"]
         tokens_counter.labels(sbu=sbu,model=model).inc(total_tokens)
+        tokens_input_counter.labels(sbu=sbu,model=model).inc(input_tokens)
+        tokens_output_counter.labels(sbu=sbu,model=model).inc(output_tokens)
 
     return Response(generate_latest(), media_type=CONTENT_TYPE_LATEST)
