@@ -32,7 +32,7 @@ This project helps teams **monitor usage, analyze token consumption, and control
 
 Flow:
 
-Client Request → FastAPI → LLM Provider → Token Extraction → JSON Log → Dashboard
+Client Request → FastAPI → LLM Provider → Token Extraction → JSON Log → MaongoDB → Prometheus → Grafana
 
 ---
 
@@ -45,11 +45,13 @@ token-meter/
 ├── token_usage.json
 ├── dashboard.py
 ├── requirements.txt
+|-- mongodb.py
 ├── .env
 │
 ├── images/
 │   ├── architecture.png
-│   └── dashboard.png
+│   └── bar-chart.png
+|.  |-- Grafana.png
 ```
 
 ---
@@ -59,7 +61,7 @@ token-meter/
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/token-meter.git
+git clone https://github.com/aksrao1998/token-meter.git
 cd token-meter
 ```
 
@@ -93,21 +95,22 @@ hugging_face_api=your_huggingface_api_token
 
 Start the FastAPI server:
 
-```
-uvicorn main:app --reload
-```
-
-or using FastAPI CLI:
+using FastAPI CLI:
 
 ```
 python -m fastapi dev main.py
 ```
+<img src="images/fastapi-logs.png" width="700">
 
 Open the API documentation:
 
 ```
 http://127.0.0.1:8000/docs
 ```
+
+---
+# get request 
+<img src="images/postman.png" width="700">
 
 ---
 
@@ -172,6 +175,9 @@ Example:
 ```
 
 ---
+# MongoDB logging data
+<img src="images/mongodb.png" width="700">
+---
 
 # 📊 Dashboard Example
 
@@ -179,6 +185,8 @@ Token usage logs can be visualized using **Plotly or Streamlit**.
 
 <p align="center">
   <img src="images/bar-chart.png" width="700">
+  <img src="images/Grafana-02.png" width="700">
+  <img src="images/Grafana-02.png" width="700">
 </p>
 
 Example metrics:
@@ -214,8 +222,6 @@ Example metrics:
 # 🔮 Future Improvements
 
 * LLM cost estimation
-* Prometheus metrics integration
-* Grafana dashboards
 * Multi-provider routing
 * Redis caching
 * Streaming responses
@@ -232,9 +238,11 @@ Example metrics:
 * Transformers
 * Plotly
 * Python
+* Mongodb
+* Grafana
+* Prometheus
 
 ---
-
 # 📜 License
 
 MIT License
