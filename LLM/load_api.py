@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-def load_models():
+def load_models(model: str)-> str:
 
     load_dotenv(override=True)
 
@@ -11,5 +11,9 @@ def load_models():
 
     if GOOGLE_API_KEY and HF_TOKEN:
         print("Check: Keys Loaded successfully.")
+        if model == "gemini":
+            return GOOGLE_API_KEY
+        else:
+            return HF_TOKEN
     else:
         print("Check: Keys Missing! Check your `.env` file.")

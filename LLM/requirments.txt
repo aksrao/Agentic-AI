@@ -1,0 +1,10 @@
+dotenv
+huggingface_hub
+numpy
+pandas
+langchain-google-genai
+langchain-huggingface
+langchain-core
+langchain
+torch
+langgraph
