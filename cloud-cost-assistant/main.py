@@ -1,38 +1,37 @@
-import asyncio
-from mcp import ClientSession, StdioServerParameters
-from mcp.client.stdio import stdio_client
+from load_api import load_models
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_mcp_adapters.client import MultiServerMCPClient
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_core.prompts import ChatPromptTemplate
+
+GOOGLE_API_KEY= load_models()
 
 async def main():
-    server_params = StdioServerParameters(
-        command="uvx",
-        args=["awslabs.aws-documentation-mcp-server@latest"]
-    )
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0,api_key=GOOGLE_API_KEY)
+    mcp_servers_config= {
+            "awslabs.aws-documentation-mcp-server": {
+            "command": "uvx",
+            "args": ["awslabs.aws-documentation-mcp-server@latest"],
+            "transport": "stdio",
+            "env": {
+                "FASTMCP_LOG_LEVEL": "ERROR",
+                "AWS_DOCUMENTATION_PARTITION": "aws",
+                "MCP_USER_AGENT": "Chrome/131.0.0.0"
+            }
+        }
+    }
+    mcp_client = MultiServerMCPClient(mcp_servers_config)
 
-    async with stdio_client(server_params) as (read, write):
-        async with ClientSession(read, write) as session:
-            await session.initialize()
+    tools = await mcp_client.get_tools()
+    if not tools:
+        print("No tools discovered from the MCP server. Exiting.")
+        return
 
-            tools = await session.list_tools()
-            format_response(tools)
+    print(f"Discovered tools: {[tool.name for tool in tools]}")
+    
 
-            result = await session.call_tool(
-                "aws_docs_search",
-                {"query": "EC2 pricing"}
-            )
-            # print(result)
-
-def format_response(parsed):
-    return f"""
-    💡**Summary**
-    {parsed['summary']}
-
-    📌 **Key Points**
-    {chr(10).join([f"- {p}" for p in parsed['key_points']])}
-
-    🚀 **Recommendations**
-    {chr(10).join([f"- {r}" for r in parsed.get('recommendations', [])])}
-
-    📚 **Source**
-    {parsed.get('source', 'AWS Documentation')}
-    """
-asyncio.run(main())
+if __name__ == "__main__":
+    # Run the main asynchronous function
+    import asyncio
+    asyncio.run(main())

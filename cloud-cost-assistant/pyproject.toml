@@ -5,8 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "awslabs-core-mcp-server>=1.0.7",
     "boto3>=1.42.78",
     "bs4>=0.0.2",
+    "langchain>=1.2.13",
+    "langchain-core>=1.2.23",
+    "langchain-google-genai>=4.2.1",
+    "langchain-mcp-adapters>=0.2.2",
     "mcp>=1.26.0",
     "requests>=2.33.0",
 ]
