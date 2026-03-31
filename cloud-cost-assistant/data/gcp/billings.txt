@@ -1,0 +1,162 @@
+How-to guides  |  Cloud Billing  |  Google Cloud Documentation
+Skip to main content
+/
+Console
+English
+Deutsch
+Español
+Español – América Latina
+Français
+Indonesia
+Italiano
+Português
+Português – Brasil
+עברית
+中文 – 简体
+中文 – 繁體
+日本語
+한국어
+Sign in
+Cloud Billing
+Start free
+Home
+Documentation
+Costs and usage management
+Cloud Billing
+Send feedback
+How-to guides
+Stay organized with collections
+Save and categorize content based on your preferences.
+Overview of Cloud Billing access control
+Understand the predefined Cloud Billing roles that you can use to
+grant or limit access to your Cloud Billing account.
+Create custom roles for Cloud Billing
+Custom roles let you grant specialized sets of permissions on
+your organization or Cloud Billing account.
+Find out your Cloud Billing charging cycle
+View your Cloud Billing charging cycle to find out how and when you
+are billed, and learn about threshold billing.
+View your cost and payment history
+View transactions, sort by transaction types, and sort your account's
+payment information.
+Overview of all Cloud Billing reports
+Overview of the various user-configurable reports
+available for your Cloud Billing data analysis needs.
+View your Cloud Billing reports and cost
+trends
+View your Google Cloud usage costs at a glance to
+discover and analyze trends.
+Understand your monthly invoice with cost table
+reports
+See a detailed, tabular view of your monthly costs for
+an invoice or statement.
+View and download prices for Google's cloud
+services
+See a tabular view of your SKU list prices for Google's
+cloud services, including Google Cloud and Google Maps Platform.
+Additionally, if your Cloud Billing account has custom
+contract pricing, this report displays the list price, your contract price,
+and your effective discount.
+Understand your savings with cost breakdown
+reports
+See an at-a-glance waterfall view of how much you might
+have spent at the on-demand price for your Google Cloud usage, and how
+usage-based credits and custom contract pricing saved you money on your
+invoice.
+Analyze the effectiveness of your committed use
+discounts
+Helps you visualize and understand the effectiveness and
+financial impact of the committed use discounts you have purchased.
+Export Cloud Billing data to BigQuery
+Export detailed Google Cloud billing data (such as usage, cost
+estimates, and pricing data) automatically throughout the day to a
+BigQuery dataset that you specify.
+Understanding the Cloud Billing data tables
+in BigQuery
+Reference information for the schema of the Cloud Billing data
+that is exported to each table in BigQuery.
+Query examples for analyzing Cloud Billing
+data exported to BigQuery
+Review some examples of how you might use BigQuery queries on
+exported Cloud Billing data.
+Visualize spend over time with Looker Studio
+Get up-to-date Cloud Billing graphs throughout the day, and use
+labels to segment your Google Cloud bill the way you want by combining
+Cloud Billing export to BigQuery functionality with
+Looker Studio.
+Create, modify, or close your Cloud Billing
+account
+Create or close Cloud Billing accounts and configure your
+project Cloud Billing settings.
+Change payments contacts and notifications
+Change the Cloud Billing payments contact or the notifications that
+you want to receive.
+View projects linked to Cloud Billing accounts
+Find out which projects are linked to your Cloud Billing account.
+Enable, disable, or change billing for a project
+Check if Cloud Billing is enabled for your project,
+change the Cloud Billing account for your project,
+or enable and disable Cloud Billing for a project.
+Create a budget
+To help you with project planning and controlling costs, you can create
+budgets and set budget alert rules to trigger notifications.
+Set up programmatic budget notifications
+Programmatic budget alerts help you automate cost management.
+About the Cloud Billing Budget API
+Use the Cloud Billing Budget API to view, create, and manage budgets
+programmatically at scale.
+Request invoiced billing
+If you are a self-serve, online Cloud Billing  customer, you might
+be eligible to change your Cloud Billing method to monthly invoiced
+billing.
+Get your invoice or payment receipt
+Find and download your invoices or locate and print your payment
+receipts.
+Make a payment to an invoiced Cloud Billing
+account
+Make a payment to your Cloud Billing monthly invoiced account.
+Understand your monthly invoice
+Review your monthly invoice to learn important usage details.
+Update your purchase order number
+Set or update the purchase order number used for your monthly invoice
+account.
+Add, remove, or update a payment method
+Add or modify a payment method, or set up a backup payment method.
+Verify your bank account
+Verify your bank account to use it as a payment method by direct debit.
+Get your statement or payment receipt
+Find and download monthly statements or locate and print your payment
+receipts.
+Make a manual payment
+Make a manual credit card payment to your automatically billed
+account.
+Resolve billing issues
+Get a refund, view credits, and resolve declined payments.
+Restarting services
+If your Google Cloud services were shut down because we couldn't
+process your payment, after your account is settled you might need to
+manually restart some services.
+Get and redeem Education Grants
+University faculty can apply for Google Cloud Education Grants for
+their computer science courses.
+Get a data transfer discount for research and education
+Learn how to get the data transfer discount for research and education.
+All Cloud Billing APIs
+Learn about the APIs available to programmatically manage various
+Cloud Billing tasks.
+Cloud Billing Account API
+Programmatically manage Cloud Billing for your projects.
+Cloud Billing Catalog API
+Retrieve pricing information. Use the Cloud Billing Catalog API to get a list of all
+public services including relevant metadata about each service, and to get
+a list of all public SKUs within a service.
+Cloud Billing Budget API
+View, create, and manage Cloud Billing Budget programmatically at scale.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.

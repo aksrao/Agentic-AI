@@ -1,0 +1,37 @@
+Cost Management | Google Cloud Blog
+Cost Management
+Our best practices for cost optimization on Google Cloud.
+News in short
+A quick take on updates, announcements, resources, events, and learning opportunities from Google Cloud in one handy location. Updated weekly.
+Read now
+Cost Management
+Simpler billing, clearer savings: A FinOps guide to updated spend-based CUDs
+By Alfonso Hernandez • 5-minute read
+Cost Management
+Automating FinOps cost management policies using Workload Manager
+By Pathik Sharma • 6-minute read
+Cost Management
+Announcing the General Availability of Smarter, AI-powered Cost Anomaly Detection
+By Shruthi Nambi • 3-minute read
+Cost Management
+Three-part framework to measure the impact of your AI use case
+By Eva Dong • 4-minute read
+Networking
+Introducing no-cost, multicloud Data Transfer Essentials for EU and U.K. customers
+By Jeanette Manfra  • 2-minute read
+Compute
+Save more with expanded coverage for Compute Flex CUDs
+By Yasmin Mowafy • 4-minute read
+Cost Management
+Google is a Leader in the 2025 IDC MarketScape: FinOps Cloud Costs Optimization
+By Sarah McMullin • 3-minute read
+Management Tools
+Optimize your cloud costs using Cloud Hub Optimization and Cost Explorer
+By Gobind Johar • 3-minute read
+Cost Management
+Spring cleaning with FinOps Hub 2.0
+By Sarah McMullin • 4-minute read
+Cost Management
+How to calculate your AI costs on Google Cloud
+By Pathik Sharma • 8-minute read
+Load more stories

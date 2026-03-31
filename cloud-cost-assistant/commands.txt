@@ -1,0 +1,2 @@
+uv init
+uv run python_path.py
