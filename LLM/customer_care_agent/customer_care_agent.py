@@ -6,6 +6,7 @@ from langgraph.graph import StateGraph
 from typing import TypedDict, List
 from langchain_core.messages import BaseMessage
 from load_api import load_models
+from mongodb import insert_order, delete_order
 
 class State(TypedDict):
     order: dict
@@ -13,9 +14,13 @@ class State(TypedDict):
 
 @tool
 def cancel_order(order_id: str) -> str:
-  """Cancel an order that hasn't shipped."""
-  # (Here you'd call your real backend API)
-  return f"Order {order_id} has been cancelled."
+  res = delete_order(order_id)
+  return f"Order {order_id} cancelled. {res}"
+
+@tool
+def take_order(item: str, quantity: int) -> str:
+  order_id = insert_order({"item": item, "quantity": quantity})
+  return f"Order placed for {quantity} of {item} with ID: {order_id}"
 
 def call_model(state):
  msgs = state["messages"]
